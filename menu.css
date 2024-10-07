@@ -1,0 +1,102 @@
+/* Global styles */
+body {
+    /* background-image: url("../menu/download.jpeg"); */
+    background-color: #85ab11;
+    /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #42403d; /* Change text color for better contrast */
+}
+
+/* Container Styling */
+.container {
+    background-image: url("./menu/images.jpeg");
+    background: rgba(248, 248, 248, 0.7);
+     /* Darker background for better readability */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+/* Menu Header Styling */
+h1, h2 {
+    color: #d47f2a; /* Changed to a brighter color */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Center align headers */
+}
+
+/* Cards Styling */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.9); /* Light background for cards */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+}
+
+/* Buttons */
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold; /* Make button text bold */
+}
+
+button:hover {
+    background-color: #d4b82a; /* Brighter color on hover */
+    color: #fff; /* Ensure text is white on hover */
+    transform: translateY(-2px);
+}
+
+/* Order Summary Styling */
+#order-summary {
+    margin-top: 50px;
+}
+
+#orderList {
+    background: rgba(255, 255, 255, 0.8); /* Light background for the order list */
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Soft border for order list */
+}
+
+/* Total Amount Styling */
+#totalAmount {
+    font-weight: bold;
+    font-size: 1.5rem; /* Increased font size for emphasis */
+    color: #c9a70e; /* Color for total amount */
+}
+
+/* Button Styling */
+.btn-success {
+    background-color: #92bc13; /* Main button color */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    /* border: none; Remove border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.btn-info {
+    background-color: #a9b3be; /* Info button color */
+}
+
+/* Additional Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; /* Adjust header size */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button size */
+    }
+}
